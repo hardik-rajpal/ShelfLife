@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Refresh the track lists for the albums the VialRack site links to.
+Refresh the track lists for the albums the ShelfLife site links to.
 
 The album list itself is curated by hand in the site's albums.json — each entry
 carries title/artist/link/cover/listId. This script reads that file, looks up
@@ -28,7 +28,7 @@ try:
 except ImportError:
     sys.exit("ytmusicapi not installed. Run: pip install ytmusicapi")
 
-DEFAULT_FILE = "../VialRack/src/assets/albums.json"
+DEFAULT_FILE = "../ShelfLife/src/assets/albums.json"
 
 
 def track_artist_names(track):

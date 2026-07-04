@@ -27,7 +27,7 @@ venv/bin/python scripts/ytmusic_export_albums.py
 venv/bin/python scripts/ytmusic_export_playlists.py   # needs fresh YTM auth
 ```
 
-Each writes into `../VialRack/src/assets/*.json` by default. Override with
+Each writes into `../ShelfLife/src/assets/*.json` by default. Override with
 `--out` (or `--file` for the albums script). The albums list is curated by hand
 in `albums.json` (title/artist/link/cover/listId); the albums script only fills
 in each entry's `tracks`.

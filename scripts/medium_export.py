@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Export a Medium user's published stories (via the public RSS feed) into a JSON
-the VialRack writeups page can fetch — title, link, date, tags, cover image,
+the ShelfLife writeups page can fetch — title, link, date, tags, cover image,
 a short snippet and an estimated reading time. No auth needed.
 
 Run (from the personal-scripts repo root):
@@ -20,7 +20,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 DEFAULT_USER = "@hardikraj08"
-DEFAULT_OUT = "../VialRack/src/assets/medium.json"
+DEFAULT_OUT = "../ShelfLife/src/assets/medium.json"
 NS = {"content": "http://purl.org/rss/1.0/modules/content/"}
 
 _TAG_RE = re.compile(r"<[^>]+>")

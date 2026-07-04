@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Export the artist playlists named in config/ytm.json (and their tracks) from
-YouTube Music into a single JSON the VialRack site can fetch.
+YouTube Music into a single JSON the ShelfLife site can fetch.
 
 For each config entry it finds the user's playlist by title, reads its tracks,
 and emits {playlist, artists, playlistId, trackCount, thumbnail, tracks:[...]}.
@@ -28,7 +28,7 @@ except ImportError:
 
 CONFIG_FILE = "./config/ytm.json"
 AUTH_FILE = "./creds/ytmusic_auth.json"
-DEFAULT_OUT = "../VialRack/src/assets/playlists.json"
+DEFAULT_OUT = "../ShelfLife/src/assets/playlists.json"
 
 
 def pick_thumbnail(thumbs):

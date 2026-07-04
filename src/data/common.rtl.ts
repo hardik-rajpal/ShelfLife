@@ -11,7 +11,7 @@ export interface footerSpec{
 }
 export const headerData:headerSpec = {
     logo:'assets/top.jpg',
-    title:'Shelved Life',
+    title:'Shelf Life',
     subtitle:'things I make & love, arranged shelf by shelf'
 }
 
